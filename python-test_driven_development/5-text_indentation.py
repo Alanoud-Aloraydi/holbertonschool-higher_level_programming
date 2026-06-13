@@ -20,28 +20,17 @@ def text_indentation(text):
     if type(text) is not str:
         raise TypeError("text must be a string")
 
-    i = 0
-    while i < len(text):
-        # Skip leading spaces
-        while i < len(text) and text[i] == ' ':
-            i += 1
+    c = 0
+    while c < len(text) and text[c] == ' ':
+        c += 1
 
-        if i == len(text):
-            break
-
-        chunk = ""
-        # Build the segment until a punctuation mark or newline
-        while i < len(text) and text[i] not in ['.', '?', ':', '\n']:
-            chunk += text[i]
-            i += 1
-
-        if i < len(text):
-            if text[i] in ['.', '?', ':']:
-                chunk += text[i]
-                print(chunk.strip(" "), end="\n\n")
-                i += 1
-            elif text[i] == '\n':
-                print(chunk.strip(" "), end="\n")
-                i += 1
-        else:
-            print(chunk.strip(" "), end="")
+    while c < len(text):
+        print(text[c], end="")
+        if text[c] == "\n" or text[c] in ".?:":
+            if text[c] in ".?:":
+                print("\n")
+            c += 1
+            while c < len(text) and text[c] == ' ':
+                c += 1
+            continue
+        c += 1
