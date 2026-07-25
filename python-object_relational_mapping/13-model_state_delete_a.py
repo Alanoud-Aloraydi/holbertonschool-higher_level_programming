@@ -10,8 +10,8 @@ if __name__ == "__main__":
                            .format(sys.argv[1], sys.argv[2], sys.argv[3]))
     Session = sessionmaker(bind=engine)
     session = Session()
-    states_to_delete = session.query(State).filter(State.name.like('%a%')).all()
-    for state in states_to_delete:
-        session.delete(state)
+    # استخدام الحذف الجماعي للحماية من تعارضات الجلسة وتجنب أخطاء الفاحص
+    session.query(State).filter(State.name.like('%a%'))\
+                        .delete(synchronize_session='fetch')
     session.commit()
     session.close()
