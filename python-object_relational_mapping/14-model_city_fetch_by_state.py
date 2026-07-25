@@ -11,7 +11,9 @@ if __name__ == "__main__":
                            .format(sys.argv[1], sys.argv[2], sys.argv[3]))
     Session = sessionmaker(bind=engine)
     session = Session()
-    query = session.query(State, City).join(City).order_by(City.id)
-    for state, city in query.all():
-        print(f"{state.name}: ({city.id}) {city.name}")
+    # استخدام filter بدلاً من join الصريح لتجنب أخطاء غياب الـ relationship
+    query = session.query(State, City).filter(State.id == City.state_id)\
+                                      .order_by(City.id).all()
+    for state, city in query:
+        print("{}: ({}) {}".format(state.name, city.id, city.name))
     session.close()
