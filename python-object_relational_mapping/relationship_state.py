@@ -1,16 +1,19 @@
 #!/usr/bin/python3
-"""Contains the class definition of a State with relationship to City"""
-from sqlalchemy import Column, Integer, String, MetaData
+"""
+Module containing the State class definition with relationship
+"""
+from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 
-mymetadata = MetaData()
-Base = declarative_base(metadata=mymetadata)
+Base = declarative_base()
+
 
 class State(Base):
-    """State class with relationship to cities"""
+    """
+    State class definition mapping to states table
+    """
     __tablename__ = 'states'
-    id = Column(Integer, unique=True, nullable=False, primary_key=True)
+    id = Column(Integer, primary_key=True, nullable=False, unique=True)
     name = Column(String(128), nullable=False)
-    # حل الاستيراد الدائري بتمرير 'City' كنص، مع تأكيد الحذف المتسلسل
-    cities = relationship("City", backref="state", cascade="all, delete, delete-orphan")
+    cities = relationship("City", backref="state", cascade="all, delete")
