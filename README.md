@@ -57,6 +57,7 @@ This repository contains programming projects completed as part of the Holberton
 | [`python-input_output`](python-input_output/)                           | File handling, JSON serialization, and object persistence.                  |
 | [`python-serialization`](python-serialization/)                         | Data serialization using JSON, CSV, XML, and other formats.                 |
 | [`python-object_relational_mapping`](python-object_relational_mapping/) | Database access with MySQLdb and SQLAlchemy ORM.                            |
+| [`python-server_side_rendering`](python-server_side_rendering/)         | Server-side rendering with Flask and Jinja, reading data from text, JSON, CSV, and SQLite. |
 
 ### Databases and APIs
 
@@ -68,9 +69,10 @@ This repository contains programming projects completed as part of the Holberton
 
 ### JavaScript
 
-| Directory                                   | Description                                                                                                              |
-| ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| [`javascript-warm_up`](javascript-warm_up/) | JavaScript fundamentals with Node.js, including variables, arguments, loops, functions, objects, recursion, and modules. |
+| Directory                                                     | Description                                                                                                              |
+| -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| [`javascript-warm_up`](javascript-warm_up/)                   | JavaScript fundamentals with Node.js, including variables, arguments, loops, functions, objects, recursion, and modules. |
+| [`javascript-dom_manipulation`](javascript-dom_manipulation/) | Client-side DOM manipulation and the Fetch API: events, element updates, and remote data. |
 
 ## Technologies
 
@@ -90,9 +92,11 @@ This repository contains programming projects completed as part of the Holberton
 holbertonschool-higher_level_programming/
 ├── C programming projects
 ├── Python programming projects
+├── python-server_side_rendering/
 ├── SQL projects
 ├── restful-api/
 ├── javascript-warm_up/
+├── javascript-dom_manipulation/
 └── README.md
 ```
 
