@@ -1,20 +1,6 @@
 # Holberton School - Higher-Level Programming
 
-This repository contains programming projects completed as part of the Holberton School curriculum. It covers foundational C programming, Python, object-oriented programming, data structures, databases, APIs, serialization, testing, object-relational mapping, and JavaScript scripting.
-
-## Main Topics
-
-* C programming fundamentals
-* Python programming
-* Object-oriented programming
-* Data structures and algorithms
-* File handling and serialization
-* Automated testing
-* SQL and relational databases
-* Object-relational mapping
-* RESTful API development
-* JavaScript scripting
-* Modules and command-line arguments
+Programming projects from the Holberton School curriculum, covering C, Python, SQL, RESTful APIs, and JavaScript.
 
 ## Projects
 
@@ -42,7 +28,7 @@ This repository contains programming projects completed as part of the Holberton
 ### Python Programming
 
 | Directory                                                               | Description                                                                 |
-| ----------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------- |
 | [`python-hello_world`](python-hello_world/)                             | Python syntax, strings, formatting, and basic scripting.                    |
 | [`python-if_else_loops_functions`](python-if_else_loops_functions/)     | Conditions, loops, functions, and scope.                                    |
 | [`python-import_modules`](python-import_modules/)                       | Modules, imports, command-line arguments, and reusable code.                |
@@ -62,7 +48,7 @@ This repository contains programming projects completed as part of the Holberton
 ### Databases and APIs
 
 | Directory                               | Description                                                                         |
-| --------------------------------------- | ----------------------------------------------------------------------------------- |
+| ---------------------------------------- | ----------------------------------------------------------------------------------- |
 | [`SQL_introduction`](SQL_introduction/) | SQL fundamentals, database creation, queries, filtering, and aggregation.           |
 | [`SQL_more_queries`](SQL_more_queries/) | Users, privileges, joins, constraints, relationships, and subqueries.               |
 | [`restful-api`](restful-api/)           | RESTful API concepts, HTTP methods, routing, JSON responses, and Flask development. |
@@ -70,46 +56,24 @@ This repository contains programming projects completed as part of the Holberton
 ### JavaScript
 
 | Directory                                                     | Description                                                                                                              |
-| -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | [`javascript-warm_up`](javascript-warm_up/)                   | JavaScript fundamentals with Node.js, including variables, arguments, loops, functions, objects, recursion, and modules. |
-| [`javascript-dom_manipulation`](javascript-dom_manipulation/) | Client-side DOM manipulation and the Fetch API: events, element updates, and remote data. |
+| [`javascript-dom_manipulation`](javascript-dom_manipulation/) | Client-side DOM manipulation and the Fetch API: events, element updates, and remote data.                                |
 
 ## Technologies
 
 * C
 * Python 3
 * JavaScript and Node.js
-* SQL and MySQL
-* Flask
+* SQL, MySQL, and SQLite
+* Flask and Jinja2
 * SQLAlchemy
 * JSON, CSV, and XML
 * Git and GitHub
-* Linux and shell scripting
-
-## Repository Structure
-
-```text
-holbertonschool-higher_level_programming/
-├── C programming projects
-├── Python programming projects
-├── python-server_side_rendering/
-├── SQL projects
-├── restful-api/
-├── javascript-warm_up/
-├── javascript-dom_manipulation/
-└── README.md
-```
-
-Each project directory contains its own source files and project-specific documentation.
 
 ## Coding Standards
-
-Projects follow the coding and documentation requirements specified by Holberton School, including:
 
 * Betty style for C projects
 * `pycodestyle` conventions for Python projects
 * Semistandard conventions for JavaScript projects
-* Executable scripts with the required shebang
 * Clear documentation and meaningful file organization
-
-
